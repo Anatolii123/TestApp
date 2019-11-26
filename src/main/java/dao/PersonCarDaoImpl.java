@@ -85,7 +85,13 @@ public class PersonCarDaoImpl implements PersonCarDao {
 
     @Override
     public void clear() {
-
+        final Session session = getSession();
+        try {
+            session.clear();
+        } finally {
+            session.getTransaction().commit();
+            session.close();
+        }
     }
 
     @Override
