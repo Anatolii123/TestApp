@@ -24,7 +24,6 @@ public class WebConfig extends WebMvcConfigurerAdapter implements WebMvcConfigur
 
         return bean;
     }
-    
 
     @Override
     public void addResourceHandlers(final ResourceHandlerRegistry registry) {
