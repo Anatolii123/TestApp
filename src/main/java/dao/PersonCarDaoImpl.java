@@ -4,12 +4,10 @@ import entities.Car;
 import entities.Person;
 import entities.PersonWithCars;
 import entities.Statistics;
-import org.hibernate.Criteria;
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
+import org.hibernate.*;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.criterion.Projections;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -66,7 +64,29 @@ public class PersonCarDaoImpl implements PersonCarDao {
 
     @Override
     public PersonWithCars showPersonsCars(long personId) {
-        return null;
+        final Session session = getSession();
+        Person person = null;
+        try {
+//            Criteria criteria = getSession().createCriteria(Person.class);
+//            criteria.add(Restrictions.eq("ID", personId));
+//            person = (Person) criteria.uniqueResult();
+//            String encodedPassword = hashPassword(user2.getEmail() +
+//                    user2.getPassword() + httpSession.getAttribute("salt"));
+//            if (encodedPassword.equals(password)){
+//                httpSession.setAttribute("password",encodedPassword);
+//                person = user2;
+//            } else {
+//                person = (People) criteria.uniqueResult();
+//                person.setPassword(encodedPassword);
+//            }
+        } catch (NonUniqueResultException e) {
+            throw e;
+        } catch (Exception e) {
+            person = null;
+        } finally {
+            session.close();
+            return null;
+        }
     }
 
     @Override
