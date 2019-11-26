@@ -78,7 +78,7 @@ public class PersonCarDaoImpl implements PersonCarDao {
             for (int i = 0; i < criteria2.list().size(); i++) {
                 cars.add((Car) criteria2.list().get(i));
             }
-                personWithCars.setPersonsCars(cars);
+            personWithCars.setPersonsCars(cars);
         } catch (NonUniqueResultException e) {
             throw e;
         } catch (Exception e) {
