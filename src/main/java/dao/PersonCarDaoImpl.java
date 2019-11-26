@@ -12,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 
 public class PersonCarDaoImpl implements PersonCarDao {
 
@@ -116,6 +118,27 @@ public class PersonCarDaoImpl implements PersonCarDao {
 
     @Override
     public Statistics getStatistics() {
-        return null;
+        final Session session = getSession();
+        Statistics statistics = new Statistics();
+        ArrayList<Car> cars = new ArrayList<>();
+        List
+        try {
+            Criteria criteria = getSession().createCriteria(Person.class);
+            Criteria criteria2 = getSession().createCriteria(Car.class);
+            statistics.setPersoncount((long) criteria.list().size());
+            statistics.setCarcount((long) criteria2.list().size());
+            for (int i = 0; i < criteria2.list().size(); i++) {
+                cars.add((Car) criteria2.list().get(i));
+            }
+
+            statistics.setUniquevendercount((long) criteria2.list().size());
+        } catch (NonUniqueResultException e) {
+            throw e;
+        } catch (Exception e) {
+            statistics = null;
+        } finally {
+            session.close();
+            return statistics;
+        }
     }
 }
