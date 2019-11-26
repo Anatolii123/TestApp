@@ -71,4 +71,8 @@ public class Car {
         this.personByPersonId = personByPersonId;
     }
 
+    public String getVendor(){
+        return null;
+    }
+
 }
