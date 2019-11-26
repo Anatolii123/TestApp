@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class PersonCarDaoImpl implements PersonCarDao {
 
@@ -69,29 +68,24 @@ public class PersonCarDaoImpl implements PersonCarDao {
     public PersonWithCars showPersonsCars(long personId) {
         final Session session = getSession();
         PersonWithCars personWithCars = new PersonWithCars();
-        List<Car> cars = new ArrayList<>();
-        Person person = null;
+        ArrayList<Car> cars = new ArrayList<>();
         try {
             Criteria criteria = getSession().createCriteria(Person.class);
             criteria.add(Restrictions.eq("ID", personId));
             personWithCars.setPerson((Person) criteria.uniqueResult());
-
-//            String encodedPassword = hashPassword(user2.getEmail() +
-//                    user2.getPassword() + httpSession.getAttribute("salt"));
-//            if (encodedPassword.equals(password)){
-//                httpSession.setAttribute("password",encodedPassword);
-//                person = user2;
-//            } else {
-//                person = (People) criteria.uniqueResult();
-//                person.setPassword(encodedPassword);
-//            }
+            Criteria criteria2 = getSession().createCriteria(Car.class);
+            criteria2.add(Restrictions.eq("OWNER_ID", personId));
+            for (int i = 0; i < criteria2.list().size(); i++) {
+                cars.add((Car) criteria2.list().get(i));
+            }
+                personWithCars.setPersonsCars(cars);
         } catch (NonUniqueResultException e) {
             throw e;
         } catch (Exception e) {
-            person = null;
+            personWithCars = null;
         } finally {
             session.close();
-            return null;
+            return personWithCars;
         }
     }
 
