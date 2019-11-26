@@ -11,6 +11,9 @@ import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PersonCarDaoImpl implements PersonCarDao {
 
     public JdbcTemplate jdbcTemplate;
@@ -65,11 +68,14 @@ public class PersonCarDaoImpl implements PersonCarDao {
     @Override
     public PersonWithCars showPersonsCars(long personId) {
         final Session session = getSession();
+        PersonWithCars personWithCars = new PersonWithCars();
+        List<Car> cars = new ArrayList<>();
         Person person = null;
         try {
-//            Criteria criteria = getSession().createCriteria(Person.class);
-//            criteria.add(Restrictions.eq("ID", personId));
-//            person = (Person) criteria.uniqueResult();
+            Criteria criteria = getSession().createCriteria(Person.class);
+            criteria.add(Restrictions.eq("ID", personId));
+            personWithCars.setPerson((Person) criteria.uniqueResult());
+
 //            String encodedPassword = hashPassword(user2.getEmail() +
 //                    user2.getPassword() + httpSession.getAttribute("salt"));
 //            if (encodedPassword.equals(password)){
