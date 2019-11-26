@@ -40,16 +40,32 @@ public class PersonCarDaoImpl implements PersonCarDao {
 
     @Override
     public void savePerson(Person person) {
-
+        final Session session = getSession();
+        try {
+            session.beginTransaction();
+            person.setId(createPersonId());
+            session.save(person);
+        } finally {
+            session.getTransaction().commit();
+            session.close();
+        }
     }
 
     @Override
     public void saveCar(Car car) {
-
+        final Session session = getSession();
+        try {
+            session.beginTransaction();
+            car.setId(createCarId());
+            session.save(car);
+        } finally {
+            session.getTransaction().commit();
+            session.close();
+        }
     }
 
     @Override
-    public PersonWithCars showPersonsCars(String email, String password) {
+    public PersonWithCars showPersonsCars(long personId) {
         return null;
     }
 

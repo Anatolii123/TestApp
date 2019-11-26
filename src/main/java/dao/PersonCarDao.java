@@ -11,7 +11,7 @@ public interface PersonCarDao {
 
     void saveCar(Car car);
 
-    PersonWithCars showPersonsCars(String email, String password);
+    PersonWithCars showPersonsCars(long personId);
 
     int createPersonId();
 
