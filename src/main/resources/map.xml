@@ -14,7 +14,7 @@
         <property name="horsepower">
             <column name="HORSEPOWER" sql-type="number(*)" precision="2147483646"/>
         </property>
-        <many-to-one name="getOwnerId" class="entities.Person">
+        <many-to-one name="getPersonByPersonId" class="entities.Person">
             <column name="OWNER_ID"/>
         </many-to-one>
     </class>

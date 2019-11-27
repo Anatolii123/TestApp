@@ -1,4 +1,13 @@
-controller\PersonCarController.class
-service\PersonCarService.class
-config\SpringConfig.class
+dao\PersonCarDaoImpl.class
+config\WebConfig.class
 dao\PersonCarDao.class
+entities\Statistics.class
+config\WebAppInitializer.class
+config\SpringConfig.class
+entities\PersonWithCars.class
+controller\PersonCarController.class
+Main.class
+service\PersonCarService.class
+service\PersonCarServiceImpl.class
+entities\Person.class
+entities\Car.class
