@@ -4,7 +4,7 @@ public class Statistics {
 
     private Long personcount;
     private Long carcount;
-    private Long uniquevendercount;
+    private Long uniquevendorcount;
 
     public Long getPersoncount() {
         return personcount;
@@ -23,10 +23,10 @@ public class Statistics {
     }
 
     public Long getUniquevendorcount() {
-        return uniquevendercount;
+        return uniquevendorcount;
     }
 
-    public void setUniquevendorcount(Long uniquevendercount) {
-        this.uniquevendercount = uniquevendercount;
+    public void setUniquevendorcount(Long uniquevendorcount) {
+        this.uniquevendorcount = uniquevendorcount;
     }
 }
