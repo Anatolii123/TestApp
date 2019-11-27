@@ -5,6 +5,8 @@ import java.sql.Date;
 import java.util.Collection;
 
 @Entity
+@Table(name = "person")
+@NamedQuery(name = "Person.getAll", query = "select p from Person p")
 public class Person {
     private long id;
     private String name;

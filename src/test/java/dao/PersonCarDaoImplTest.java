@@ -1,33 +1,38 @@
 package dao;
 
+import config.DBUnitConfig;
 import entities.Person;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.cfg.Environment;
-import org.hibernate.dialect.HSQLDialect;
+import org.dbunit.Assertion;
+import org.dbunit.dataset.IDataSet;
+import org.dbunit.dataset.xml.FlatXmlDataSetBuilder;
+import org.junit.Before;
 import org.junit.Test;
-import org.springframework.orm.hibernate5.HibernateTemplate;
+import service.PersonCarServiceImpl;
 
+import javax.persistence.EntityManager;
+import javax.persistence.Persistence;
+import java.io.IOException;
 import java.sql.Date;
 
-public class PersonCarDaoImplTest extends JPAHibernateTest {
+public class PersonCarDaoImplTest extends DBUnitConfig {
 
-    private static final String HBM_DIR_PREFIX = "./src";
-    private PersonCarDaoImpl personCarDao = new PersonCarDaoImpl();
+    private PersonCarServiceImpl service = new PersonCarServiceImpl();
+    private EntityManager em = Persistence.createEntityManagerFactory("DBUnitEx").createEntityManager();
 
-//    public PersonCarDaoImplTest() {
-//        Configuration configuration = new Configuration();
-//        configuration.setProperty(Environment.DRIVER, "org.hsqldb.jdbcDriver");
-//        configuration.setProperty(Environment.URL, "jdbc:hsqldb:mem:Test");
-//        configuration.setProperty(Environment.USER, "sa");
-//        configuration.setProperty(Environment.DIALECT, HSQLDialect.class.getName());
-//        configuration.setProperty(Environment.SHOW_SQL, "true");
-//        configuration.setProperty(Environment.CACHE_PROVIDER_CONFIG, "org.hibernate.cache.NoCacheProvider");
-//        configuration.setProperty(Environment.HBM2DDL_AUTO, "create-drop");
-//        configuration.addFile(HBM_DIR_PREFIX + "/hbm/User.hbm.xml");
-//        SessionFactory sessionFactory = configuration.buildSessionFactory();
-//        HibernateTemplate hibernateTemplate = new HibernateTemplate(sessionFactory);
-//    }
+    @Before
+    public void setUp() throws Exception {
+        super.setUp();
+        beforeData = new FlatXmlDataSetBuilder().build(
+                Thread.currentThread().getContextClassLoader()
+                        .getResourceAsStream("entity/person-data.xml"));
+
+        tester.setDataSet(beforeData);
+        tester.onSetup();
+    }
+
+    public PersonCarDaoImplTest(String name) throws IOException {
+        super(name);
+    }
 
     @Test
     public void getSession() {
@@ -35,12 +40,21 @@ public class PersonCarDaoImplTest extends JPAHibernateTest {
     }
 
     @Test
-    public void savePerson() {
+    public void testSavePerson() throws Exception {
         Person person = new Person();
-        person.setId(1);
+        person.setId(3);
         person.setName("Name");
-        person.setBirthDate(Date.valueOf("25.05.2000"));
-        personCarDao.savePerson(person);
+        person.setBirthDate(Date.valueOf("2000-05-25"));
+        service.save(person);
+
+        IDataSet expectedData = new FlatXmlDataSetBuilder().build(
+                Thread.currentThread().getContextClassLoader()
+                        .getResourceAsStream("entity/person-data-save.xml"));
+
+        IDataSet actualData = tester.getConnection().createDataSet();
+
+        String[] ignore = {"id"};
+        Assertion.assertEqualsIgnoreCols(expectedData, actualData, "person", ignore);
     }
 
     @Test

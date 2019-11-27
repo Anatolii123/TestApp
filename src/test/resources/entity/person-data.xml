@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <person id="1" name="Oleg" birthDate="1986-05-25"/>
+    <person id="2" name="Alex" birthDate="1989-01-17"/>
+</dataset>
