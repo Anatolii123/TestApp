@@ -22,11 +22,11 @@ public class Statistics {
         this.carcount = carcount;
     }
 
-    public Long getUniquevendercount() {
+    public Long getUniquevendorcount() {
         return uniquevendercount;
     }
 
-    public void setUniquevendercount(Long uniquevendercount) {
+    public void setUniquevendorcount(Long uniquevendercount) {
         this.uniquevendercount = uniquevendercount;
     }
 }

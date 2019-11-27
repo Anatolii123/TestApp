@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class PersonCarDaoImpl implements PersonCarDao {
 
@@ -119,7 +120,7 @@ public class PersonCarDaoImpl implements PersonCarDao {
         final Session session = getSession();
         Statistics statistics = new Statistics();
         ArrayList<Car> cars = new ArrayList<>();
-        ArrayList<String> vendors
+        HashSet<String> vendors = new HashSet<String>();
         try {
             Criteria criteria = getSession().createCriteria(Person.class);
             Criteria criteria2 = getSession().createCriteria(Car.class);
@@ -127,10 +128,9 @@ public class PersonCarDaoImpl implements PersonCarDao {
             statistics.setCarcount((long) criteria2.list().size());
             for (int i = 0; i < criteria2.list().size(); i++) {
                 cars.add((Car) criteria2.list().get(i));
-                cars.get(i).obtainVendor();
+                vendors.add(cars.get(i).obtainVendor());
             }
-
-            statistics.setUniquevendercount((long) criteria2.list().size());
+            statistics.setUniquevendorcount((long) criteria2.list().size());
         } catch (NonUniqueResultException e) {
             throw e;
         } catch (Exception e) {
