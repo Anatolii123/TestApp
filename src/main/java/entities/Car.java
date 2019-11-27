@@ -4,9 +4,10 @@ import javax.persistence.*;
 
 @Entity
 public class Car {
-    private long id;
+    private Long id;
     private String model;
-    private long horsepower;
+    private Long horsepower;
+    private long ownerId;
     private Person personByPersonId;
 
     @Id
@@ -20,7 +21,6 @@ public class Car {
         this.id = id;
     }
 
-    @Basic
     @Column(name = "MODEL", nullable = true, length = 45)
     public String getModel() {
         return model;
@@ -30,7 +30,6 @@ public class Car {
         this.model = model;
     }
 
-    @Basic
     @Column(name = "HORSEPOWER", nullable = false, precision = 0)
     public long getHorsepower() {
         return horsepower;
@@ -62,6 +61,15 @@ public class Car {
         return result;
     }
 
+    @Column(name = "OWNER_ID", nullable = false, precision = 0)
+    public long getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(long ownerId) {
+        this.ownerId = ownerId;
+    }
+
     @ManyToOne
     @JoinColumn(name = "OWNER_ID",referencedColumnName = "ID",nullable = false)
     public Person getPersonByPersonId() {
@@ -72,9 +80,16 @@ public class Car {
         this.personByPersonId = personByPersonId;
     }
 
-    public String obtainVendor() {
+    @Transient
+    public String getVendorModel() {
         String vendor = this.model.substring(0,this.model.indexOf("-"));
         return vendor;
+    }
+
+    @Transient
+    public String getModelModel() {
+        String model = this.model.substring(this.model.indexOf("-") + 1, this.model.length());
+        return model;
     }
 
 }

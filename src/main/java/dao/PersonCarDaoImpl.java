@@ -128,7 +128,7 @@ public class PersonCarDaoImpl implements PersonCarDao {
             statistics.setCarcount((long) criteria2.list().size());
             for (int i = 0; i < criteria2.list().size(); i++) {
                 cars.add((Car) criteria2.list().get(i));
-                vendors.add(cars.get(i).obtainVendor());
+                vendors.add(cars.get(i).getVendorModel());
             }
             statistics.setUniquevendorcount((long)vendors.size());
         } catch (NonUniqueResultException e) {

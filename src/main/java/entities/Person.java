@@ -2,12 +2,15 @@ package entities;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.Collection;
 
 @Entity
 public class Person {
     private long id;
     private String name;
     private Date birthDate;
+    @OneToMany(mappedBy = "personByPersonId")
+    private Collection<Car> cars;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -20,7 +23,6 @@ public class Person {
         this.id = id;
     }
 
-    @Basic
     @Column(name = "NAME", nullable = false, length = 45)
     public String getName() {
         return name;
@@ -30,10 +32,17 @@ public class Person {
         this.name = name;
     }
 
-    @Basic
     @Column(name = "BIRTH_DATE", nullable = false)
     public Date getBirthDate() {
         return birthDate;
+    }
+
+    public Collection<Car> getCars() {
+        return cars;
+    }
+
+    public void setCars(Collection<Car> cars) {
+        this.cars = cars;
     }
 
     public void setBirthDate(Date birthDate) {
