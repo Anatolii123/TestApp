@@ -13,10 +13,6 @@ public interface PersonCarDao {
 
     PersonWithCars showPersonsCars(long personId);
 
-    int createPersonId();
-
-    int createCarId();
-
     void clear();
 
     Statistics getStatistics();
