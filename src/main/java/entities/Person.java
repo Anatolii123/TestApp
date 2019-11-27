@@ -1,11 +1,7 @@
 package entities;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Date;
-import java.sql.Time;
 
 @Entity
 public class Person {
@@ -14,6 +10,7 @@ public class Person {
     private Date birthDate;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ID", nullable = false, precision = 0)
     public long getId() {
         return id;

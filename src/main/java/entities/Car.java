@@ -10,6 +10,7 @@ public class Car {
     private Person personByPersonId;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ID", nullable = false, precision = 0)
     public long getId() {
         return id;
