@@ -71,8 +71,9 @@ public class Car {
         this.personByPersonId = personByPersonId;
     }
 
-    public String getVendor(){
-        return null;
+    public String obtainVendor() {
+        String vendor = this.model.substring(0,this.model.indexOf("-"));
+        return vendor;
     }
 
 }

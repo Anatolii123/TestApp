@@ -119,6 +119,7 @@ public class PersonCarDaoImpl implements PersonCarDao {
         final Session session = getSession();
         Statistics statistics = new Statistics();
         ArrayList<Car> cars = new ArrayList<>();
+        ArrayList<String> vendors
         try {
             Criteria criteria = getSession().createCriteria(Person.class);
             Criteria criteria2 = getSession().createCriteria(Car.class);
@@ -126,7 +127,7 @@ public class PersonCarDaoImpl implements PersonCarDao {
             statistics.setCarcount((long) criteria2.list().size());
             for (int i = 0; i < criteria2.list().size(); i++) {
                 cars.add((Car) criteria2.list().get(i));
-                cars.get(i).getModel().indexOf("-");
+                cars.get(i).obtainVendor();
             }
 
             statistics.setUniquevendercount((long) criteria2.list().size());
