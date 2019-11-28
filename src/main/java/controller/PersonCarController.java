@@ -18,8 +18,8 @@ public class PersonCarController {
     public PersonCarService personCarService;
 
     @PostMapping(value = "/addPerson")
-    public ModelAndView addPerson() {
-        return new ModelAndView("addPerson");
+    public String addPerson() {
+        return "addPerson";
     }
 
     @PostMapping(value = "/person")
