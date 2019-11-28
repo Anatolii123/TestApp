@@ -1,42 +1,34 @@
 package service;
 
+import dao.PersonCarDao;
+import entities.Car;
 import entities.Person;
-
-import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
-import javax.persistence.TypedQuery;
-import java.util.List;
+import entities.PersonWithCars;
+import entities.Statistics;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class PersonCarServiceImpl implements PersonCarService {
 
-    private EntityManager em = Persistence.createEntityManagerFactory("DBUnitEx").createEntityManager();
+    @Autowired
+    public PersonCarDao personCarDao;
 
-    public void save(Person person){
-        em.getTransaction().begin();
-        em.persist(person);
-        em.getTransaction().commit();
+    @Override
+    public void savePerson(Person person) {
+
     }
 
-    public void delete(Person person) {
-        em.getTransaction().begin();
-        em.remove(person);
-        em.getTransaction().commit();
+    @Override
+    public void saveCar(Car car) {
+
     }
 
-    public Person get(int id) {
-        return em.find(Person.class, id);
+    @Override
+    public PersonWithCars showPersonsCars(long personId) {
+        return null;
     }
 
-    public void update(Person person) {
-        em.getTransaction().begin();
-        em.merge(person);
-        em.getTransaction().commit();
+    @Override
+    public Statistics getStatistics() {
+        return null;
     }
-
-    public List<Person> getAll() {
-        TypedQuery<Person> namedQuery = em.createNamedQuery("Person.getAll",Person.class);
-
-        return namedQuery.getResultList();
-    }
-
 }
