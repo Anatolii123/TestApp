@@ -2,122 +2,122 @@
 <testng-results skipped="0" failed="0" ignored="0" total="27" passed="27">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="2954" started-at="2019-11-28T16:28:08 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+  <suite name="Surefire suite" duration-ms="2943" started-at="2019-11-28T16:30:01 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="2954" started-at="2019-11-28T16:28:08 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+    <test name="Surefire test" duration-ms="2943" started-at="2019-11-28T16:30:01 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
       <class name="entities.StatisticsTest">
-        <test-method status="PASS" signature="setPersoncount()" name="setPersoncount" duration-ms="1" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="setPersoncount()" name="setPersoncount" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setPersoncount -->
-        <test-method status="PASS" signature="getUniquevendorcount()" name="getUniquevendorcount" duration-ms="1" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="getUniquevendorcount()" name="getUniquevendorcount" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUniquevendorcount -->
-        <test-method status="PASS" signature="getCarcount()" name="getCarcount" duration-ms="1" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="getCarcount()" name="getCarcount" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCarcount -->
-        <test-method status="PASS" signature="setUniquevendorcount()" name="setUniquevendorcount" duration-ms="1" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="setUniquevendorcount()" name="setUniquevendorcount" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUniquevendorcount -->
-        <test-method status="PASS" signature="getPersoncount()" name="getPersoncount" duration-ms="1" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="getPersoncount()" name="getPersoncount" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getPersoncount -->
-        <test-method status="PASS" signature="setCarcount()" name="setCarcount" duration-ms="1" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="setCarcount()" name="setCarcount" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setCarcount -->
       </class> <!-- entities.StatisticsTest -->
       <class name="entities.PersonWithCarsTest">
-        <test-method status="PASS" signature="getPerson()" name="getPerson" duration-ms="1" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="getPerson()" name="getPerson" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getPerson -->
-        <test-method status="PASS" signature="setPersonsCars()" name="setPersonsCars" duration-ms="1" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="setPersonsCars()" name="setPersonsCars" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setPersonsCars -->
-        <test-method status="PASS" signature="setPerson()" name="setPerson" duration-ms="0" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="setPerson()" name="setPerson" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setPerson -->
-        <test-method status="PASS" signature="getPersonsCars()" name="getPersonsCars" duration-ms="0" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="getPersonsCars()" name="getPersonsCars" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getPersonsCars -->
       </class> <!-- entities.PersonWithCarsTest -->
       <class name="dao.PersonCarDaoImplTest">
-        <test-method status="PASS" signature="getSession()" name="getSession" duration-ms="2637" started-at="2019-11-28T16:28:08 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="getSession()" name="getSession" duration-ms="2664" started-at="2019-11-28T16:30:02 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSession -->
-        <test-method status="PASS" signature="clear()" name="clear" duration-ms="2653" started-at="2019-11-28T16:28:08 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clear -->
-        <test-method status="PASS" signature="testSavePerson() throws java.lang.Exception" name="testSavePerson" duration-ms="2684" started-at="2019-11-28T16:28:08 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSavePerson -->
-        <test-method status="PASS" signature="getStatistics()" name="getStatistics" duration-ms="2637" started-at="2019-11-28T16:28:08 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="getStatistics()" name="getStatistics" duration-ms="2664" started-at="2019-11-28T16:30:02 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getStatistics -->
-        <test-method status="PASS" signature="testSaveCar()" name="testSaveCar" duration-ms="2699" started-at="2019-11-28T16:28:08 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="clear()" name="clear" duration-ms="2648" started-at="2019-11-28T16:30:02 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+        <test-method status="PASS" signature="testSavePerson() throws java.lang.Exception" name="testSavePerson" duration-ms="2695" started-at="2019-11-28T16:30:02 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSavePerson -->
+        <test-method status="PASS" signature="testSaveCar()" name="testSaveCar" duration-ms="2710" started-at="2019-11-28T16:30:02 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSaveCar -->
-        <test-method status="PASS" signature="showPersonsCars()" name="showPersonsCars" duration-ms="2699" started-at="2019-11-28T16:28:08 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="showPersonsCars()" name="showPersonsCars" duration-ms="2710" started-at="2019-11-28T16:30:02 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- showPersonsCars -->
       </class> <!-- dao.PersonCarDaoImplTest -->
       <class name="entities.CarTest">
-        <test-method status="PASS" signature="setHorsepower()" name="setHorsepower" duration-ms="1" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="setHorsepower()" name="setHorsepower" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setHorsepower -->
-        <test-method status="PASS" signature="testEquals()" name="testEquals" duration-ms="1" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="testEquals()" name="testEquals" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEquals -->
-        <test-method status="PASS" signature="setModel()" name="setModel" duration-ms="1" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="setModel()" name="setModel" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setModel -->
-        <test-method status="PASS" signature="getHorsepower()" name="getHorsepower" duration-ms="1" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="getHorsepower()" name="getHorsepower" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getHorsepower -->
-        <test-method status="PASS" signature="getModel()" name="getModel" duration-ms="2" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="getModel()" name="getModel" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getModel -->
-        <test-method status="PASS" signature="testHashCode()" name="testHashCode" duration-ms="1" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="testHashCode()" name="testHashCode" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHashCode -->
-        <test-method status="PASS" signature="getPersonByPersonId()" name="getPersonByPersonId" duration-ms="1" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="getPersonByPersonId()" name="getPersonByPersonId" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getPersonByPersonId -->
-        <test-method status="PASS" signature="setPersonByPersonId()" name="setPersonByPersonId" duration-ms="1" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="setPersonByPersonId()" name="setPersonByPersonId" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setPersonByPersonId -->
-        <test-method status="PASS" signature="obtainVendor()" name="obtainVendor" duration-ms="1" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="obtainVendor()" name="obtainVendor" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtainVendor -->
-        <test-method status="PASS" signature="setId()" name="setId" duration-ms="1" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="setId()" name="setId" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setId -->
-        <test-method status="PASS" signature="getId()" name="getId" duration-ms="1" started-at="2019-11-28T16:28:11 YEKT" finished-at="2019-11-28T16:28:11 YEKT">
+        <test-method status="PASS" signature="getId()" name="getId" duration-ms="0" started-at="2019-11-28T16:30:04 YEKT" finished-at="2019-11-28T16:30:04 YEKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getId -->
