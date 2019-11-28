@@ -18,7 +18,7 @@ public class PersonCarController {
     public PersonCarDao personCarDao;
 
     @PostMapping(value = "/person")
-    public void savePerson(@RequestBody Person person, String... strings) {
+    public void savePerson(@RequestBody Person person) {
         personCarService.savePerson(person);
     }
 
