@@ -21,9 +21,9 @@ import java.util.Properties;
 
 @Configuration
 @EnableJpaRepositories(basePackages = "entities")
-@PropertySource("persistence-person.properties")
+@PropertySource("persistence.properties")
 @EnableTransactionManagement
-public class PersonJpaConfig {
+public class JpaConfig {
 
     @Autowired
     private Environment env;

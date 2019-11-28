@@ -31,8 +31,8 @@ public class Car {
     }
 
     @Column(name = "HORSEPOWER", nullable = false, precision = 0)
-    public long getHorsepower() {
-        return horsepower;
+    public Long getHorsepower() {
+        return this.horsepower;
     }
 
     public void setHorsepower(long horsepower) {
@@ -62,8 +62,8 @@ public class Car {
     }
 
     @Column(name = "OWNER_ID", nullable = false, precision = 0)
-    public long getOwnerId() {
-        return ownerId;
+    public Long getOwnerId() {
+        return this.ownerId;
     }
 
     public void setOwnerId(long ownerId) {
@@ -73,7 +73,7 @@ public class Car {
     @ManyToOne
     @JoinColumn(name = "OWNER_ID", insertable = false, updatable = false, referencedColumnName = "ID",nullable = false)
     public Person getPersonByPersonId() {
-        return personByPersonId;
+        return this.personByPersonId;
     }
 
     public void setPersonByPersonId(Person personByPersonId) {
