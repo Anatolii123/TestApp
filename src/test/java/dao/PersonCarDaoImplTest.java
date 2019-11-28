@@ -7,6 +7,8 @@ import org.dbunit.dataset.IDataSet;
 import org.dbunit.dataset.xml.FlatXmlDataSetBuilder;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.junit4.SpringRunner;
 import service.PersonCarServiceImpl;
 
 import javax.persistence.EntityManager;
@@ -14,6 +16,7 @@ import javax.persistence.Persistence;
 import java.io.IOException;
 import java.sql.Date;
 
+@RunWith(SpringRunner.class)
 public class PersonCarDaoImplTest extends DBUnitConfig {
 
     private PersonCarServiceImpl service = new PersonCarServiceImpl();
@@ -30,8 +33,8 @@ public class PersonCarDaoImplTest extends DBUnitConfig {
         tester.onSetup();
     }
 
-    public PersonCarDaoImplTest(String name) throws IOException {
-        super(name);
+    public PersonCarDaoImplTest() throws IOException {
+        super("MyTests");
     }
 
     @Test
@@ -46,7 +49,6 @@ public class PersonCarDaoImplTest extends DBUnitConfig {
         person.setName("Name");
         person.setBirthDate(Date.valueOf("2000-05-25"));
         service.save(person);
-
         IDataSet expectedData = new FlatXmlDataSetBuilder().build(
                 Thread.currentThread().getContextClassLoader()
                         .getResourceAsStream("entity/person-data-save.xml"));
