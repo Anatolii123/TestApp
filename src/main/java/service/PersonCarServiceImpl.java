@@ -14,12 +14,12 @@ public class PersonCarServiceImpl implements PersonCarService {
 
     @Override
     public void savePerson(Person person) {
-
+        personCarDao.savePerson(person);
     }
 
     @Override
     public void saveCar(Car car) {
-
+        personCarDao.saveCar(car);
     }
 
     @Override
