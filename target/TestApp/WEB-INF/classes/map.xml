@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entities.Car" table="CAR" schema="INTERNSHIP">
+        <id name="id">
+            <column name="ID" sql-type="number(*)" precision="2147483646"/>
+        </id>
+        <property name="model">
+            <column name="MODEL" sql-type="varchar2(45)" length="45" not-null="true"/>
+        </property>
+        <property name="horsepower">
+            <column name="HORSEPOWER" sql-type="number(*)" precision="2147483646"/>
+        </property>
+        <property name="ownerId">
+            <column name="OWNER_ID" sql-type="number(*)" precision="2147483646"/>
+        </property>
+        <many-to-one name="personByPersonId" class="entities.Person">
+            <column name="OWNER_ID"/>
+        </many-to-one>
+    </class>
+    <class name="entities.Person" table="PERSON" schema="INTERNSHIP">
+        <id name="id">
+            <column name="ID" sql-type="number(*)" precision="2147483646"/>
+        </id>
+        <property name="name">
+            <column name="NAME" sql-type="varchar2(45)" length="45"/>
+        </property>
+        <property name="birthDate">
+            <column name="BIRTH_DATE" sql-type="date"/>
+        </property>
+    </class>
+</hibernate-mapping>
