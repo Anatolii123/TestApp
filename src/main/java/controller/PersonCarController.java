@@ -3,6 +3,7 @@ package controller;
 import dao.PersonCarDao;
 import entities.Car;
 import entities.Person;
+import entities.Statistics;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import service.PersonCarService;
@@ -30,6 +31,16 @@ public class PersonCarController {
 
     @GetMapping(value = "/personwithcars", params = {"personId"})
     public void getPersonWithCars(@RequestParam("personId") Long personId) {
+
+    }
+
+    @GetMapping(value = "/statistics")
+    public Statistics getStatistics() {
+        return null;
+    }
+
+    @GetMapping(value = "/clear")
+    public void clearDB() {
 
     }
 
