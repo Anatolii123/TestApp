@@ -1,0 +1,5 @@
+entities\CarTest.class
+dao\PersonCarDaoImplTest.class
+entities\StatisticsTest.class
+entities\PersonWithCarsTest.class
+entities\PersonTest.class

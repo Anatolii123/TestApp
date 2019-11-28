@@ -1,0 +1,254 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>35/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 27 17:45:49 YEKT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (42 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='dao.PersonCarDaoImplTest.clear()'><b>clear</b><br>Test class: dao.PersonCarDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>clear(dao.PersonCarDaoImplTest)</td></tr>
+<tr>
+<td title='entities.PersonTest.getBirthDate()'><b>getBirthDate</b><br>Test class: entities.PersonTest</td>
+<td></td>
+<td>0</td>
+<td>getBirthDate(entities.PersonTest)</td></tr>
+<tr>
+<td title='entities.StatisticsTest.getCarcount()'><b>getCarcount</b><br>Test class: entities.StatisticsTest</td>
+<td></td>
+<td>0</td>
+<td>getCarcount(entities.StatisticsTest)</td></tr>
+<tr>
+<td title='entities.CarTest.getHorsepower()'><b>getHorsepower</b><br>Test class: entities.CarTest</td>
+<td></td>
+<td>0</td>
+<td>getHorsepower(entities.CarTest)</td></tr>
+<tr>
+<td title='entities.CarTest.getId()'><b>getId</b><br>Test class: entities.CarTest</td>
+<td></td>
+<td>0</td>
+<td>getId(entities.CarTest)</td></tr>
+<tr>
+<td title='entities.PersonTest.getId()'><b>getId</b><br>Test class: entities.PersonTest</td>
+<td></td>
+<td>0</td>
+<td>getId(entities.PersonTest)</td></tr>
+<tr>
+<td title='entities.CarTest.getModel()'><b>getModel</b><br>Test class: entities.CarTest</td>
+<td></td>
+<td>0</td>
+<td>getModel(entities.CarTest)</td></tr>
+<tr>
+<td title='entities.PersonTest.getName()'><b>getName</b><br>Test class: entities.PersonTest</td>
+<td></td>
+<td>0</td>
+<td>getName(entities.PersonTest)</td></tr>
+<tr>
+<td title='entities.PersonWithCarsTest.getPerson()'><b>getPerson</b><br>Test class: entities.PersonWithCarsTest</td>
+<td></td>
+<td>0</td>
+<td>getPerson(entities.PersonWithCarsTest)</td></tr>
+<tr>
+<td title='entities.CarTest.getPersonByPersonId()'><b>getPersonByPersonId</b><br>Test class: entities.CarTest</td>
+<td></td>
+<td>0</td>
+<td>getPersonByPersonId(entities.CarTest)</td></tr>
+<tr>
+<td title='entities.StatisticsTest.getPersoncount()'><b>getPersoncount</b><br>Test class: entities.StatisticsTest</td>
+<td></td>
+<td>0</td>
+<td>getPersoncount(entities.StatisticsTest)</td></tr>
+<tr>
+<td title='entities.PersonWithCarsTest.getPersonsCars()'><b>getPersonsCars</b><br>Test class: entities.PersonWithCarsTest</td>
+<td></td>
+<td>0</td>
+<td>getPersonsCars(entities.PersonWithCarsTest)</td></tr>
+<tr>
+<td title='dao.PersonCarDaoImplTest.getSession()'><b>getSession</b><br>Test class: dao.PersonCarDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>getSession(dao.PersonCarDaoImplTest)</td></tr>
+<tr>
+<td title='dao.PersonCarDaoImplTest.getStatistics()'><b>getStatistics</b><br>Test class: dao.PersonCarDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>getStatistics(dao.PersonCarDaoImplTest)</td></tr>
+<tr>
+<td title='entities.StatisticsTest.getUniquevendorcount()'><b>getUniquevendorcount</b><br>Test class: entities.StatisticsTest</td>
+<td></td>
+<td>0</td>
+<td>getUniquevendorcount(entities.StatisticsTest)</td></tr>
+<tr>
+<td title='entities.CarTest.obtainVendor()'><b>obtainVendor</b><br>Test class: entities.CarTest</td>
+<td></td>
+<td>0</td>
+<td>obtainVendor(entities.CarTest)</td></tr>
+<tr>
+<td title='dao.PersonCarDaoImplTest.saveCar()'><b>saveCar</b><br>Test class: dao.PersonCarDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>saveCar(dao.PersonCarDaoImplTest)</td></tr>
+<tr>
+<td title='dao.PersonCarDaoImplTest.savePerson()'><b>savePerson</b><br>Test class: dao.PersonCarDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>savePerson(dao.PersonCarDaoImplTest)</td></tr>
+<tr>
+<td title='entities.PersonTest.setBirthDate()'><b>setBirthDate</b><br>Test class: entities.PersonTest</td>
+<td></td>
+<td>0</td>
+<td>setBirthDate(entities.PersonTest)</td></tr>
+<tr>
+<td title='entities.StatisticsTest.setCarcount()'><b>setCarcount</b><br>Test class: entities.StatisticsTest</td>
+<td></td>
+<td>0</td>
+<td>setCarcount(entities.StatisticsTest)</td></tr>
+<tr>
+<td title='entities.CarTest.setHorsepower()'><b>setHorsepower</b><br>Test class: entities.CarTest</td>
+<td></td>
+<td>0</td>
+<td>setHorsepower(entities.CarTest)</td></tr>
+<tr>
+<td title='entities.CarTest.setId()'><b>setId</b><br>Test class: entities.CarTest</td>
+<td></td>
+<td>0</td>
+<td>setId(entities.CarTest)</td></tr>
+<tr>
+<td title='entities.PersonTest.setId()'><b>setId</b><br>Test class: entities.PersonTest</td>
+<td></td>
+<td>0</td>
+<td>setId(entities.PersonTest)</td></tr>
+<tr>
+<td title='entities.CarTest.setModel()'><b>setModel</b><br>Test class: entities.CarTest</td>
+<td></td>
+<td>0</td>
+<td>setModel(entities.CarTest)</td></tr>
+<tr>
+<td title='entities.PersonTest.setName()'><b>setName</b><br>Test class: entities.PersonTest</td>
+<td></td>
+<td>0</td>
+<td>setName(entities.PersonTest)</td></tr>
+<tr>
+<td title='entities.PersonWithCarsTest.setPerson()'><b>setPerson</b><br>Test class: entities.PersonWithCarsTest</td>
+<td></td>
+<td>0</td>
+<td>setPerson(entities.PersonWithCarsTest)</td></tr>
+<tr>
+<td title='entities.CarTest.setPersonByPersonId()'><b>setPersonByPersonId</b><br>Test class: entities.CarTest</td>
+<td></td>
+<td>0</td>
+<td>setPersonByPersonId(entities.CarTest)</td></tr>
+<tr>
+<td title='entities.StatisticsTest.setPersoncount()'><b>setPersoncount</b><br>Test class: entities.StatisticsTest</td>
+<td></td>
+<td>0</td>
+<td>setPersoncount(entities.StatisticsTest)</td></tr>
+<tr>
+<td title='entities.PersonWithCarsTest.setPersonsCars()'><b>setPersonsCars</b><br>Test class: entities.PersonWithCarsTest</td>
+<td></td>
+<td>0</td>
+<td>setPersonsCars(entities.PersonWithCarsTest)</td></tr>
+<tr>
+<td title='entities.StatisticsTest.setUniquevendorcount()'><b>setUniquevendorcount</b><br>Test class: entities.StatisticsTest</td>
+<td></td>
+<td>0</td>
+<td>setUniquevendorcount(entities.StatisticsTest)</td></tr>
+<tr>
+<td title='dao.PersonCarDaoImplTest.showPersonsCars()'><b>showPersonsCars</b><br>Test class: dao.PersonCarDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>showPersonsCars(dao.PersonCarDaoImplTest)</td></tr>
+<tr>
+<td title='entities.CarTest.testEquals()'><b>testEquals</b><br>Test class: entities.CarTest</td>
+<td></td>
+<td>0</td>
+<td>testEquals(entities.CarTest)</td></tr>
+<tr>
+<td title='entities.PersonTest.testEquals()'><b>testEquals</b><br>Test class: entities.PersonTest</td>
+<td></td>
+<td>0</td>
+<td>testEquals(entities.PersonTest)</td></tr>
+<tr>
+<td title='entities.CarTest.testHashCode()'><b>testHashCode</b><br>Test class: entities.CarTest</td>
+<td></td>
+<td>0</td>
+<td>testHashCode(entities.CarTest)</td></tr>
+<tr>
+<td title='entities.PersonTest.testHashCode()'><b>testHashCode</b><br>Test class: entities.PersonTest</td>
+<td></td>
+<td>0</td>
+<td>testHashCode(entities.PersonTest)</td></tr>
+</table><p>
+</body>
+</html>
