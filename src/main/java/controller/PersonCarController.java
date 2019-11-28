@@ -16,9 +16,6 @@ public class PersonCarController {
     @Autowired
     public PersonCarService personCarService;
 
-    @Autowired
-    public PersonCarDao personCarDao;
-
     @PostMapping(value = "/person")
     public void savePerson(@RequestBody Person person) {
         personCarService.savePerson(person);

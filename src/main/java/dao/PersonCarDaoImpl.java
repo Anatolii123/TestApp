@@ -9,10 +9,12 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 
+@Repository
 public class PersonCarDaoImpl implements PersonCarDao {
 
     public JdbcTemplate jdbcTemplate;

@@ -6,7 +6,9 @@ import entities.Person;
 import entities.PersonWithCars;
 import entities.Statistics;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class PersonCarServiceImpl implements PersonCarService {
 
     @Autowired
