@@ -24,11 +24,11 @@ public class PersonCarServiceImpl implements PersonCarService {
 
     @Override
     public PersonWithCars showPersonsCars(long personId) {
-        return null;
+        return personCarDao.showPersonsCars(personId);
     }
 
     @Override
     public Statistics getStatistics() {
-        return null;
+        return personCarDao.getStatistics();
     }
 }
