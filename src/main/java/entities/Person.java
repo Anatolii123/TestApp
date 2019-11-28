@@ -11,7 +11,6 @@ public class Person {
     private long id;
     private String name;
     private Date birthDate;
-    @OneToMany(mappedBy = "personByPersonId")
     private Collection<Car> cars;
 
     @Id
@@ -39,6 +38,7 @@ public class Person {
         return birthDate;
     }
 
+    @OneToMany(mappedBy = "personByPersonId")
     public Collection<Car> getCars() {
         return cars;
     }

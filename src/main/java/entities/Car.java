@@ -7,14 +7,14 @@ public class Car {
     private Long id;
     private String model;
     private Long horsepower;
-    private long ownerId;
+    private Long ownerId;
     private Person personByPersonId;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ID", nullable = false, precision = 0)
-    public long getId() {
-        return id;
+    public Long getId() {
+        return this.id;
     }
 
     public void setId(long id) {
@@ -71,7 +71,7 @@ public class Car {
     }
 
     @ManyToOne
-    @JoinColumn(name = "OWNER_ID",referencedColumnName = "ID",nullable = false)
+    @JoinColumn(name = "OWNER_ID", insertable = false, updatable = false, referencedColumnName = "ID",nullable = false)
     public Person getPersonByPersonId() {
         return personByPersonId;
     }

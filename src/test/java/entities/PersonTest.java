@@ -1,16 +1,6 @@
 package entities;
 
-import config.DBUnitConfig;
-import org.dbunit.dataset.xml.FlatXmlDataSetBuilder;
-import org.junit.Before;
 import org.junit.Test;
-import service.PersonCarServiceImpl;
-
-import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
-import java.io.IOException;
-
-import static org.junit.Assert.*;
 
 public class PersonTest {
 

@@ -12,6 +12,11 @@ public class Student {
     public Student() {
     }
 
+    public Student(long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public long getId() {
         return id;
     }
