@@ -1,4 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.357 s - in TestSuite
+Tests run: 28, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.154 s <<< FAILURE! - in TestSuite
+savePerson on savePerson(controller.PersonCarControllerTest)(controller.PersonCarControllerTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'personCarController': Unsatisfied dependency expressed through field 'personCarService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'service.PersonCarService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'service.PersonCarService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+
+testSaveCar on testSaveCar(dao.PersonCarDaoImplTest)(dao.PersonCarDaoImplTest)  Time elapsed: 0.016 s  <<< FAILURE!
+java.lang.NullPointerException
+	at dao.PersonCarDaoImplTest.testSaveCar(PersonCarDaoImplTest.java:60)
+

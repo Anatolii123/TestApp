@@ -2,4 +2,5 @@ entities\CarTest.class
 dao\PersonCarDaoImplTest.class
 entities\StatisticsTest.class
 entities\PersonWithCarsTest.class
+controller\PersonCarControllerTest.class
 entities\PersonTest.class

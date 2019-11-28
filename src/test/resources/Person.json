@@ -1,13 +1,5 @@
 {
   "id":3,
   "name":"Name",
-  "birthDate":"2000-05-25",
-  "cars": [
-    {
-      "value" : 1
-    },
-    {
-      "value" : 2
-    }
-  ]
+  "birthDate":"2000-05-25"
 }

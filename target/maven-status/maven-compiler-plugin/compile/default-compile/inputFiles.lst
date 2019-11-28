@@ -1,4 +1,7 @@
+C:\Users\kusakin\IdeaProjects\TestApp\src\main\java\controller\Person.java
 C:\Users\kusakin\IdeaProjects\TestApp\src\main\java\dao\PersonCarDao.java
+C:\Users\kusakin\IdeaProjects\TestApp\src\main\java\entities\CarRepository.java
+C:\Users\kusakin\IdeaProjects\TestApp\src\main\java\config\JpaConfig.java
 C:\Users\kusakin\IdeaProjects\TestApp\src\main\java\entities\Person.java
 C:\Users\kusakin\IdeaProjects\TestApp\src\main\java\controller\PersonCarController.java
 C:\Users\kusakin\IdeaProjects\TestApp\src\main\java\entities\Car.java
@@ -8,6 +11,7 @@ C:\Users\kusakin\IdeaProjects\TestApp\src\main\java\Main.java
 C:\Users\kusakin\IdeaProjects\TestApp\src\main\java\service\PersonCarService.java
 C:\Users\kusakin\IdeaProjects\TestApp\src\main\java\config\WebAppInitializer.java
 C:\Users\kusakin\IdeaProjects\TestApp\src\main\java\config\WebConfig.java
+C:\Users\kusakin\IdeaProjects\TestApp\src\main\java\entities\PersonRepository.java
 C:\Users\kusakin\IdeaProjects\TestApp\src\main\java\dao\PersonCarDaoImpl.java
 C:\Users\kusakin\IdeaProjects\TestApp\src\main\java\entities\Statistics.java
 C:\Users\kusakin\IdeaProjects\TestApp\src\main\java\config\SpringConfig.java
