@@ -6,8 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import service.PersonCarService;
 
-import java.util.Date;
-
 @RestController
 @CrossOrigin(value = "*")
 @RequestMapping("/")
@@ -20,7 +18,7 @@ public class PersonCarController {
     public PersonCarDao personCarDao;
 
     @PostMapping(value = "/person")
-    public void savePerson(@RequestBody Person person) {
+    public void savePerson(@RequestBody Person person, String... strings) {
         personCarService.savePerson(person);
     }
 
