@@ -6,6 +6,7 @@ import entities.Person;
 import entities.Statistics;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 import service.PersonCarService;
 
 @RestController
@@ -15,6 +16,11 @@ public class PersonCarController {
 
     @Autowired
     public PersonCarService personCarService;
+
+    @PostMapping(value = "/addPerson")
+    public ModelAndView addPerson() {
+        return new ModelAndView("addPerson");
+    }
 
     @PostMapping(value = "/person")
     public void savePerson(@RequestBody Person person) {
