@@ -18,17 +18,16 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(
-        classes = { JpaConfig.class },
+        classes = { JpaConfig.class, JpaConfig.class },
         loader = AnnotationConfigContextLoader.class)
 @WebMvcTest
 @Transactional
 public class PersonCarDaoImplTest {
 
     @Resource
-    private PersonRepository personRepository;
-
-    @Resource
     private CarRepository carRepository;
+    @Resource
+    private PersonRepository personRepository;
 
     @Test
     public void getSession() {
@@ -55,9 +54,9 @@ public class PersonCarDaoImplTest {
         car.setHorsepower(381);
         car.setOwnerId(1);
         carRepository.save(car);
-        Car car2 = carRepository.findOne(1L);
+        Car car2 = carRepository.getOne(2L);
 
-        assertEquals("BMW", car2.getVendorModel());
+        assertEquals("BMW-X5", car2.getModel());
     }
 
     @Test

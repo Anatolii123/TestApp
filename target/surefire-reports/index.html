@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">28 methods, 2 failed,   26 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="controller.PersonCarControllerTest" hash-for-method="savePerson">savePerson</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="dao.PersonCarDaoImplTest" hash-for-method="testSaveCar">testSaveCar</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">27 methods,   27 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -246,6 +227,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="dao.PersonCarDaoImplTest" hash-for-method="testSaveCar">testSaveCar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="dao.PersonCarDaoImplTest" hash-for-method="testSavePerson">testSavePerson</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -261,117 +247,42 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
+          <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">dao.PersonCarDaoImplTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">entities.PersonWithCarsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testSaveCar">
-                  </a> <!-- testSaveCar -->
-                  <span class="method-name">testSaveCar</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at dao.PersonCarDaoImplTest.testSaveCar(PersonCarDaoImplTest.java:60)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
-	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
-	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
-	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
+                  <a name="getPerson">
+                  </a> <!-- getPerson -->
+                  <span class="method-name">getPerson</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">controller.PersonCarControllerTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="savePerson">
-                  </a> <!-- savePerson -->
-                  <span class="method-name">savePerson</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: Failed to load ApplicationContext
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &apos;personCarController&apos;: Unsatisfied dependency expressed through field &apos;personCarService&apos;; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;service.PersonCarService&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:397)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1429)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
-	... 46 more
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;service.PersonCarService&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1695)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1253)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:636)
-	... 64 more
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
+                  <a name="getPersonsCars">
+                  </a> <!-- getPersonsCars -->
+                  <span class="method-name">getPersonsCars</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setPerson">
+                  </a> <!-- setPerson -->
+                  <span class="method-name">setPerson</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setPersonsCars">
+                  </a> <!-- setPersonsCars -->
+                  <span class="method-name">setPersonsCars</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -460,6 +371,56 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">dao.PersonCarDaoImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clear">
+                  </a> <!-- clear -->
+                  <span class="method-name">clear</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSession">
+                  </a> <!-- getSession -->
+                  <span class="method-name">getSession</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getStatistics">
+                  </a> <!-- getStatistics -->
+                  <span class="method-name">getStatistics</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="showPersonsCars">
+                  </a> <!-- showPersonsCars -->
+                  <span class="method-name">showPersonsCars</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSaveCar">
+                  </a> <!-- testSaveCar -->
+                  <span class="method-name">testSaveCar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSavePerson">
+                  </a> <!-- testSavePerson -->
+                  <span class="method-name">testSavePerson</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">entities.StatisticsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -507,85 +468,6 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">dao.PersonCarDaoImplTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="clear">
-                  </a> <!-- clear -->
-                  <span class="method-name">clear</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getSession">
-                  </a> <!-- getSession -->
-                  <span class="method-name">getSession</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getStatistics">
-                  </a> <!-- getStatistics -->
-                  <span class="method-name">getStatistics</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="showPersonsCars">
-                  </a> <!-- showPersonsCars -->
-                  <span class="method-name">showPersonsCars</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSavePerson">
-                  </a> <!-- testSavePerson -->
-                  <span class="method-name">testSavePerson</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">entities.PersonWithCarsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getPerson">
-                  </a> <!-- getPerson -->
-                  <span class="method-name">getPerson</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getPersonsCars">
-                  </a> <!-- getPersonsCars -->
-                  <span class="method-name">getPersonsCars</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="setPerson">
-                  </a> <!-- setPerson -->
-                  <span class="method-name">setPerson</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="setPersonsCars">
-                  </a> <!-- setPersonsCars -->
-                  <span class="method-name">setPersonsCars</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
         </div> <!-- panel Surefire_suite -->
         <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -597,7 +479,6 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 &lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire suite&quot; junit=&quot;true&quot;&gt;
   &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire test&quot; junit=&quot;true&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;controller.PersonCarControllerTest&quot;/&gt;
       &lt;class name=&quot;dao.PersonCarDaoImplTest&quot;/&gt;
       &lt;class name=&quot;entities.CarTest&quot;/&gt;
       &lt;class name=&quot;entities.PersonTest&quot;/&gt;
@@ -616,7 +497,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (6 classes)</span>
+                <span class="test-name">Surefire test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -642,124 +523,120 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(28);
+data.addRows(27);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'showPersonsCars')
+data.setCell(0, 1, 'testSaveCar')
 data.setCell(0, 2, 'dao.PersonCarDaoImplTest')
-data.setCell(0, 3, 1940);
+data.setCell(0, 3, 2699);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testSavePerson')
+data.setCell(1, 1, 'showPersonsCars')
 data.setCell(1, 2, 'dao.PersonCarDaoImplTest')
-data.setCell(1, 3, 1924);
+data.setCell(1, 3, 2699);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testSaveCar')
+data.setCell(2, 1, 'testSavePerson')
 data.setCell(2, 2, 'dao.PersonCarDaoImplTest')
-data.setCell(2, 3, 1924);
+data.setCell(2, 3, 2684);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'clear')
 data.setCell(3, 2, 'dao.PersonCarDaoImplTest')
-data.setCell(3, 3, 1877);
+data.setCell(3, 3, 2653);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'getStatistics')
+data.setCell(4, 1, 'getSession')
 data.setCell(4, 2, 'dao.PersonCarDaoImplTest')
-data.setCell(4, 3, 1877);
+data.setCell(4, 3, 2637);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'getSession')
+data.setCell(5, 1, 'getStatistics')
 data.setCell(5, 2, 'dao.PersonCarDaoImplTest')
-data.setCell(5, 3, 1877);
+data.setCell(5, 3, 2637);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'savePerson')
-data.setCell(6, 2, 'controller.PersonCarControllerTest')
-data.setCell(6, 3, 568);
+data.setCell(6, 1, 'getModel')
+data.setCell(6, 2, 'entities.CarTest')
+data.setCell(6, 3, 2);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'setUniquevendorcount')
-data.setCell(7, 2, 'entities.StatisticsTest')
-data.setCell(7, 3, 0);
+data.setCell(7, 1, 'setHorsepower')
+data.setCell(7, 2, 'entities.CarTest')
+data.setCell(7, 3, 1);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'setPersoncount')
-data.setCell(8, 2, 'entities.StatisticsTest')
-data.setCell(8, 3, 0);
+data.setCell(8, 1, 'testEquals')
+data.setCell(8, 2, 'entities.CarTest')
+data.setCell(8, 3, 1);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'getPersonsCars')
-data.setCell(9, 2, 'entities.PersonWithCarsTest')
-data.setCell(9, 3, 0);
+data.setCell(9, 1, 'setModel')
+data.setCell(9, 2, 'entities.CarTest')
+data.setCell(9, 3, 1);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'getModel')
+data.setCell(10, 1, 'getHorsepower')
 data.setCell(10, 2, 'entities.CarTest')
-data.setCell(10, 3, 0);
+data.setCell(10, 3, 1);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'getUniquevendorcount')
-data.setCell(11, 2, 'entities.StatisticsTest')
-data.setCell(11, 3, 0);
+data.setCell(11, 1, 'getPerson')
+data.setCell(11, 2, 'entities.PersonWithCarsTest')
+data.setCell(11, 3, 1);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'setHorsepower')
-data.setCell(12, 2, 'entities.CarTest')
-data.setCell(12, 3, 0);
+data.setCell(12, 1, 'setPersoncount')
+data.setCell(12, 2, 'entities.StatisticsTest')
+data.setCell(12, 3, 1);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'testEquals')
-data.setCell(13, 2, 'entities.CarTest')
-data.setCell(13, 3, 0);
+data.setCell(13, 1, 'getUniquevendorcount')
+data.setCell(13, 2, 'entities.StatisticsTest')
+data.setCell(13, 3, 1);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'setCarcount')
+data.setCell(14, 1, 'getCarcount')
 data.setCell(14, 2, 'entities.StatisticsTest')
-data.setCell(14, 3, 0);
+data.setCell(14, 3, 1);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'setModel')
-data.setCell(15, 2, 'entities.CarTest')
-data.setCell(15, 3, 0);
+data.setCell(15, 1, 'setUniquevendorcount')
+data.setCell(15, 2, 'entities.StatisticsTest')
+data.setCell(15, 3, 1);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'getId')
-data.setCell(16, 2, 'entities.CarTest')
-data.setCell(16, 3, 0);
+data.setCell(16, 1, 'setPersonsCars')
+data.setCell(16, 2, 'entities.PersonWithCarsTest')
+data.setCell(16, 3, 1);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'getCarcount')
+data.setCell(17, 1, 'getPersoncount')
 data.setCell(17, 2, 'entities.StatisticsTest')
-data.setCell(17, 3, 0);
+data.setCell(17, 3, 1);
 data.setCell(18, 0, 18)
 data.setCell(18, 1, 'testHashCode')
 data.setCell(18, 2, 'entities.CarTest')
-data.setCell(18, 3, 0);
+data.setCell(18, 3, 1);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'obtainVendor')
+data.setCell(19, 1, 'getPersonByPersonId')
 data.setCell(19, 2, 'entities.CarTest')
-data.setCell(19, 3, 0);
+data.setCell(19, 3, 1);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'getPerson')
-data.setCell(20, 2, 'entities.PersonWithCarsTest')
-data.setCell(20, 3, 0);
+data.setCell(20, 1, 'setPersonByPersonId')
+data.setCell(20, 2, 'entities.CarTest')
+data.setCell(20, 3, 1);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'setPersonByPersonId')
+data.setCell(21, 1, 'obtainVendor')
 data.setCell(21, 2, 'entities.CarTest')
-data.setCell(21, 3, 0);
+data.setCell(21, 3, 1);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'getHorsepower')
+data.setCell(22, 1, 'setId')
 data.setCell(22, 2, 'entities.CarTest')
-data.setCell(22, 3, 0);
+data.setCell(22, 3, 1);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'setPersonsCars')
-data.setCell(23, 2, 'entities.PersonWithCarsTest')
-data.setCell(23, 3, 0);
+data.setCell(23, 1, 'getId')
+data.setCell(23, 2, 'entities.CarTest')
+data.setCell(23, 3, 1);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'getPersonByPersonId')
-data.setCell(24, 2, 'entities.CarTest')
-data.setCell(24, 3, 0);
+data.setCell(24, 1, 'setCarcount')
+data.setCell(24, 2, 'entities.StatisticsTest')
+data.setCell(24, 3, 1);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'getPersoncount')
-data.setCell(25, 2, 'entities.StatisticsTest')
+data.setCell(25, 1, 'setPerson')
+data.setCell(25, 2, 'entities.PersonWithCarsTest')
 data.setCell(25, 3, 0);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'setPerson')
+data.setCell(26, 1, 'getPersonsCars')
 data.setCell(26, 2, 'entities.PersonWithCarsTest')
 data.setCell(26, 3, 0);
-data.setCell(27, 0, 27)
-data.setCell(27, 1, 'setId')
-data.setCell(27, 2, 'entities.CarTest')
-data.setCell(27, 3, 0);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -785,134 +662,123 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">controller.PersonCarControllerTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">savePerson</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">dao.PersonCarDaoImplTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getSession</span>
-                <span class="method-start">615 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getStatistics</span>
-                <span class="method-start">615 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clear</span>
-                <span class="method-start">615 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testSavePerson</span>
-                <span class="method-start">615 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testSaveCar</span>
-                <span class="method-start">615 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">showPersonsCars</span>
-                <span class="method-start">615 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">entities.CarTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">setPersonByPersonId</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2715 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getPersonByPersonId</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2715 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getId</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2715 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">setId</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2715 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">obtainVendor</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2715 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getHorsepower</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2715 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testHashCode</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2715 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testEquals</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2715 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">setModel</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2715 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">setHorsepower</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2715 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getModel</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2715 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">entities.PersonWithCarsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getPersonsCars</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2718 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">setPerson</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2718 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getPerson</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2718 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">setPersonsCars</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2718 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">entities.StatisticsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">setUniquevendorcount</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2719 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getUniquevendorcount</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2719 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getPersoncount</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2719 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">setPersoncount</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2719 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">setCarcount</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2719 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getCarcount</span>
-                <span class="method-start">2555 ms</span>
+                <span class="method-start">2719 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="3.154" tests="28" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="3.508" tests="27" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\kusakin\AppData\Local\Temp\surefire2227467023861255968\surefirebooter2952102050855523475.jar C:\Users\kusakin\AppData\Local\Temp\surefire2227467023861255968 2019-11-28T16-07-24_829-jvmRun1 surefire1075158456226583916tmp surefire_07431511903095584984tmp"/>
+    <property name="sun.java.command" value="C:\Users\kusakin\AppData\Local\Temp\surefire8856872934256108461\surefirebooter9218052974718093442.jar C:\Users\kusakin\AppData\Local\Temp\surefire8856872934256108461 2019-11-28T16-28-07_632-jvmRun1 surefire3849214793959169964tmp surefire_08329117122201715851tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\kusakin\IdeaProjects\TestApp\target\test-classes;C:\Users\kusakin\IdeaProjects\TestApp\target\classes;C:\Users\kusakin\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\kusakin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\kusakin\.m2\repository\com\h2database\h2\1.4.200\h2-1.4.200.jar;C:\Users\kusakin\.m2\repository\org\springframework\spring-test\5.1.9.RELEASE\spring-test-5.1.9.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\springframework\data\spring-data-jpa\1.11.1.RELEASE\spring-data-jpa-1.11.1.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\springframework\data\spring-data-commons\1.13.1.RELEASE\spring-data-commons-1.13.1.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\aspectj\aspectjrt\1.8.10\aspectjrt-1.8.10.jar;C:\Users\kusakin\.m2\repository\org\slf4j\slf4j-api\1.7.24\slf4j-api-1.7.24.jar;C:\Users\kusakin\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.24\jcl-over-slf4j-1.7.24.jar;C:\Users\kusakin\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;C:\Users\kusakin\.m2\repository\org\apache\tomcat\tomcat-jdbc\9.0.26\tomcat-jdbc-9.0.26.jar;C:\Users\kusakin\.m2\repository\org\apache\tomcat\tomcat-juli\9.0.26\tomcat-juli-9.0.26.jar;C:\Users\kusakin\.m2\repository\com\oracle\ojdbc14\10.2.0.4.0\ojdbc14-10.2.0.4.0.jar;C:\Users\kusakin\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar;C:\Users\kusakin\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.2\hibernate-jpa-2.1-api-1.0.2.jar;C:\Users\kusakin\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\kusakin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.9\jackson-core-2.9.9.jar;C:\Users\kusakin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.9\jackson-annotations-2.9.9.jar;C:\Users\kusakin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.9.3\jackson-databind-2.9.9.3.jar;C:\Users\kusakin\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.9\jackson-module-parameter-names-2.9.9.jar;C:\Users\kusakin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.9\jackson-datatype-jdk8-2.9.9.jar;C:\Users\kusakin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.9\jackson-datatype-jsr310-2.9.9.jar;C:\Users\kusakin\.m2\repository\org\springframework\spring-core\5.2.0.RELEASE\spring-core-5.2.0.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\springframework\spring-jcl\5.2.0.RELEASE\spring-jcl-5.2.0.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\springframework\spring-tx\5.2.0.RELEASE\spring-tx-5.2.0.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\springframework\spring-aop\5.2.0.RELEASE\spring-aop-5.2.0.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\springframework\spring-beans\5.2.0.RELEASE\spring-beans-5.2.0.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\springframework\spring-jdbc\4.3.0.RELEASE\spring-jdbc-4.3.0.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\springframework\spring-context\5.2.0.RELEASE\spring-context-5.2.0.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\springframework\spring-expression\5.2.0.RELEASE\spring-expression-5.2.0.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\springframework\spring-webmvc\5.2.0.RELEASE\spring-webmvc-5.2.0.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\springframework\spring-web\5.2.0.RELEASE\spring-web-5.2.0.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\freemarker\freemarker\2.3.29\freemarker-2.3.29.jar;C:\Users\kusakin\.m2\repository\org\springframework\spring-context-support\5.2.0.RELEASE\spring-context-support-5.2.0.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\hibernate\hibernate-core\5.4.7.Final\hibernate-core-5.4.7.Final.jar;C:\Users\kusakin\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\kusakin\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\kusakin\.m2\repository\org\javassist\javassist\3.24.0-GA\javassist-3.24.0-GA.jar;C:\Users\kusakin\.m2\repository\net\bytebuddy\byte-buddy\1.10.2\byte-buddy-1.10.2.jar;C:\Users\kusakin\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\kusakin\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\kusakin\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\kusakin\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;C:\Users\kusakin\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\kusakin\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\kusakin\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.0.Final\hibernate-commons-annotations-5.1.0.Final.jar;C:\Users\kusakin\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\kusakin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\kusakin\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\kusakin\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\kusakin\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\kusakin\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\kusakin\.m2\repository\org\hibernate\hibernate-entitymanager\5.4.7.Final\hibernate-entitymanager-5.4.7.Final.jar;C:\Users\kusakin\.m2\repository\org\hibernate\hibernate-validator\5.4.3.Final\hibernate-validator-5.4.3.Final.jar;C:\Users\kusakin\.m2\repository\org\testng\testng\7.0.0\testng-7.0.0.jar;C:\Users\kusakin\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\kusakin\.m2\repository\org\springframework\spring-orm\5.1.9.RELEASE\spring-orm-5.1.9.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\kusakin\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\kusakin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\kusakin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\kusakin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\kusakin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\kusakin\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\kusakin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\kusakin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\kusakin\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\kusakin\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\kusakin\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\kusakin\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\kusakin\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\kusakin\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\kusakin\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\kusakin\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\kusakin\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\kusakin\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\kusakin\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.1.8.RELEASE\spring-boot-starter-test-2.1.8.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\springframework\boot\spring-boot-starter\2.1.8.RELEASE\spring-boot-starter-2.1.8.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\springframework\boot\spring-boot\2.1.8.RELEASE\spring-boot-2.1.8.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.1.8.RELEASE\spring-boot-autoconfigure-2.1.8.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.1.8.RELEASE\spring-boot-starter-logging-2.1.8.RELEASE.jar;C:\Users\kusakin\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\kusakin\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\kusakin\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.11.2\log4j-to-slf4j-2.11.2.jar;C:\Users\kusakin\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;C:\Users\kusakin\.m2\repository\org\slf4j\jul-to-slf4j\1.7.28\jul-to-slf4j-1.7.28.jar;C:\Users\kusakin\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\kusakin\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23.jar;C:\Users\kusakin\.m2\repository\org\springframework\boot\spring-boot-test\2.1.8.RELEASE\spring-boot-test-2.1.8.RELEASE.jar;C:\Users\kusakin\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.1.8.RELEASE\spring-boot-test-autoconfigure-2.1.8.RELEASE.jar;C:\Users\kusakin\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\kusakin\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\kusakin\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\kusakin\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\kusakin\.m2\repository\org\assertj\assertj-core\3.11.1\assertj-core-3.11.1.jar;C:\Users\kusakin\.m2\repository\org\mockito\mockito-core\2.23.4\mockito-core-2.23.4.jar;C:\Users\kusakin\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.3\byte-buddy-agent-1.9.3.jar;C:\Users\kusakin\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\kusakin\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\kusakin\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\kusakin\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\kusakin\.m2\repository\org\xmlunit\xmlunit-core\2.6.3\xmlunit-core-2.6.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\kusakin"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\kusakin\AppData\Local\Temp\surefire2227467023861255968\surefirebooter2952102050855523475.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\kusakin\AppData\Local\Temp\surefire8856872934256108461\surefirebooter9218052974718093442.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_221\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,260 +61,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="savePerson on savePerson(controller.PersonCarControllerTest)" classname="controller.PersonCarControllerTest" time="0.002">
-    <failure message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'personCarController': Unsatisfied dependency expressed through field 'personCarService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'service.PersonCarService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'service.PersonCarService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-</failure>
-    <system-out><![CDATA[Usage: <main class> [options] The XML suite files to run
-  Options:
-    -alwaysrunlisteners
-      Should MethodInvocation Listeners be run even for skipped methods
-      Default: true
-    -configfailurepolicy
-      Configuration failure policy (skip or continue)
-    -d
-      Output directory
-    -dataproviderthreadcount
-      Number of threads to use when running data providers
-    -excludegroups
-      Comma-separated list of group names to  exclude
-    -groups
-      Comma-separated list of group names to be run
-    -junit
-      JUnit mode
-      Default: false
-    -listener
-      List of .class files or list of class names implementing ITestListener 
-      or ISuiteListener
-    -methods
-      Comma separated of test methods
-      Default: []
-    -methodselectors
-      List of .class files or list of class names implementing IMethodSelector
-    -mixed
-      Mixed mode - autodetect the type of current test and run it with 
-      appropriate runner
-      Default: false
-    -objectfactory
-      List of .class files or list of class names implementing 
-      ITestRunnerFactory 
-    -parallel
-      Parallel mode (methods, tests or classes)
-      Possible Values: [tests, methods, classes, instances, none, true, false]
-    -port
-      The port
-    -reporter
-      Extended configuration for custom report listener
-    -suitename
-      Default name of test suite, if not specified in suite definition file or 
-      source code
-    -suitethreadpoolsize
-      Size of the thread pool to use to run suites
-      Default: 1
-    -testclass
-      The list of test classes
-    -testjar
-      A jar file containing the tests
-    -testname
-      Default name of test, if not specified in suitedefinition file or source 
-      code 
-    -testnames
-      The list of test names to run
-    -testrunfactory, -testRunFactory
-      The factory used to create tests
-    -threadcount
-      Number of threads to use when running tests in parallel
-    -threadpoolfactoryclass
-      The threadpool executor factory implementation that TestNG should use.
-    -usedefaultlisteners
-      Whether to use the default listeners
-      Default: true
-    -log, -verbose
-      Level of verbosity
-    -xmlpathinjar
-      The full path to the xml file inside the jar file (only valid if 
-      -testjar was specified)
-      Default: testng.xml
-
-16:07:25.654 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class controller.PersonCarControllerTest]
-16:07:25.654 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-16:07:25.670 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-16:07:25.685 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [controller.PersonCarControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-16:07:25.701 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [controller.PersonCarControllerTest], using SpringBootContextLoader
-16:07:25.701 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [controller.PersonCarControllerTest]: class path resource [controller/PersonCarControllerTest-context.xml] does not exist
-16:07:25.701 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [controller.PersonCarControllerTest]: class path resource [controller/PersonCarControllerTestContext.groovy] does not exist
-16:07:25.701 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [controller.PersonCarControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-16:07:25.748 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [controller.PersonCarControllerTest]
-16:07:25.818 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [controller.PersonCarControllerTest]: using defaults.
-16:07:25.818 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener]
-16:07:25.834 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@17497425, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@f0da945, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4803b726, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@ffaa6af, org.springframework.test.context.support.DirtiesContextTestExecutionListener@53ce1329, org.springframework.test.context.transaction.TransactionalTestExecutionListener@316bcf94, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6404f418, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3e11f9e9, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1de5f259, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@729d991e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@31fa1761, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@957e06]
-16:07:25.834 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [controller.PersonCarControllerTest]
-16:07:25.849 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [controller.PersonCarControllerTest]
-16:07:25.849 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [controller.PersonCarControllerTest]
-16:07:25.849 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [controller.PersonCarControllerTest]
-16:07:25.849 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [controller.PersonCarControllerTest]
-16:07:25.849 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [controller.PersonCarControllerTest]
-16:07:25.849 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@73e9cf30 testClass = PersonCarControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@771a660 testClass = PersonCarControllerTest, locations = '{}', classes = '{class controller.PersonCarController, class controller.PersonCarController}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@2d52216b key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@79e2c065, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7e07db1f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@747ddf94, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e7e8512, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@18078bef], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
-16:07:25.849 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [controller.PersonCarControllerTest]
-16:07:25.849 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [controller.PersonCarControllerTest]
-16:07:25.865 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::        (v2.1.8.RELEASE)
-
-2019-11-28 16:07:26.084  INFO 9440 --- [           main] controller.PersonCarControllerTest       : Starting PersonCarControllerTest on PERMYAKOVA with PID 9440 (started by kusakin in C:\Users\kusakin\IdeaProjects\TestApp)
-2019-11-28 16:07:26.084  INFO 9440 --- [           main] controller.PersonCarControllerTest       : No active profile set, falling back to default profiles: default
-2019-11-28 16:07:26.386  WARN 9440 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'personCarController': Unsatisfied dependency expressed through field 'personCarService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'service.PersonCarService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2019-11-28 16:07:26.389  INFO 9440 --- [           main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-11-28 16:07:26.397 ERROR 9440 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field personCarService in controller.PersonCarController required a bean of type 'service.PersonCarService' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'service.PersonCarService' in your configuration.
-
-2019-11-28 16:07:26.400 ERROR 9440 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@17497425] to prepare test instance [controller.PersonCarControllerTest@3624da92]
-
-java.lang.IllegalStateException: Failed to load ApplicationContext
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115) [junit-4.12.jar:4.12]
-	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:74) [testng-7.0.0.jar:na]
-	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:65) [testng-7.0.0.jar:na]
-	at org.testng.TestRunner$1.run(TestRunner.java:656) [testng-7.0.0.jar:na]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[na:1.8.0_221]
-	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:847) ~[testng-7.0.0.jar:na]
-	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:685) ~[testng-7.0.0.jar:na]
-	at org.testng.TestRunner.run(TestRunner.java:589) ~[testng-7.0.0.jar:na]
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402) ~[testng-7.0.0.jar:na]
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396) ~[testng-7.0.0.jar:na]
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355) ~[testng-7.0.0.jar:na]
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304) ~[testng-7.0.0.jar:na]
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) ~[testng-7.0.0.jar:na]
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) ~[testng-7.0.0.jar:na]
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180) ~[testng-7.0.0.jar:na]
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102) ~[testng-7.0.0.jar:na]
-	at org.testng.TestNG.runSuites(TestNG.java:1032) ~[testng-7.0.0.jar:na]
-	at org.testng.TestNG.run(TestNG.java:1000) ~[testng-7.0.0.jar:na]
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135) ~[surefire-testng-2.22.1.jar:2.22.1]
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198) ~[surefire-testng-2.22.1.jar:2.22.1]
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94) ~[surefire-testng-2.22.1.jar:2.22.1]
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146) ~[surefire-testng-2.22.1.jar:2.22.1]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'personCarController': Unsatisfied dependency expressed through field 'personCarService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'service.PersonCarService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:397) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1429) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	... 46 common frames omitted
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'service.PersonCarService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1695) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1253) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:636) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	... 64 common frames omitted
-
-]]></system-out>
-    <system-err><![CDATA[[TestNG] [ERROR] No test suite found. Nothing to run
-]]></system-err>
-  </testcase>
-  <testcase name="getSession on getSession(dao.PersonCarDaoImplTest)" classname="dao.PersonCarDaoImplTest" time="0.046"/>
-  <testcase name="getStatistics on getStatistics(dao.PersonCarDaoImplTest)" classname="dao.PersonCarDaoImplTest" time="0.016"/>
-  <testcase name="clear on clear(dao.PersonCarDaoImplTest)" classname="dao.PersonCarDaoImplTest" time="0"/>
-  <testcase name="testSavePerson on testSavePerson(dao.PersonCarDaoImplTest)" classname="dao.PersonCarDaoImplTest" time="0.031"/>
-  <testcase name="testSaveCar on testSaveCar(dao.PersonCarDaoImplTest)" classname="dao.PersonCarDaoImplTest" time="0.016">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at dao.PersonCarDaoImplTest.testSaveCar(PersonCarDaoImplTest.java:60)
-</failure>
-    <system-out><![CDATA[2019-11-28 16:07:28.373  INFO 9440 --- [           main] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@3ace6346 testClass = PersonCarDaoImplTest, testInstance = dao.PersonCarDaoImplTest@65d9e72a, testMethod = testSaveCar@PersonCarDaoImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@17216605 testClass = PersonCarDaoImplTest, locations = '{}', classes = '{class config.JpaConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@10a907ec key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@79e2c065, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7e07db1f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@c65a5ef, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@cf6885ac, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@d6a24e20, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@18078bef], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.support.AnnotationConfigContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@1a9ec80e]; rollback [true]
-Hibernate: 
-    select
-        car0_.ID as ID1_0_0_,
-        car0_.HORSEPOWER as HORSEPOW2_0_0_,
-        car0_.MODEL as MODEL3_0_0_,
-        car0_.OWNER_ID as OWNER_ID4_0_0_ 
-    from
-        Car car0_ 
-    where
-        car0_.ID=?
-Hibernate: 
-    call next value for hibernate_sequence
-Hibernate: 
-    select
-        car0_.ID as ID1_0_0_,
-        car0_.HORSEPOWER as HORSEPOW2_0_0_,
-        car0_.MODEL as MODEL3_0_0_,
-        car0_.OWNER_ID as OWNER_ID4_0_0_,
-        person1_.ID as ID1_1_1_,
-        person1_.BIRTH_DATE as BIRTH_DA2_1_1_,
-        person1_.NAME as NAME3_1_1_ 
-    from
-        Car car0_ 
-    inner join
-        person person1_ 
-            on car0_.OWNER_ID=person1_.ID 
-    where
-        car0_.ID=?
-2019-11-28 16:07:28.373  INFO 9440 --- [           main] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@3ace6346 testClass = PersonCarDaoImplTest, testInstance = dao.PersonCarDaoImplTest@65d9e72a, testMethod = testSaveCar@PersonCarDaoImplTest, testException = java.lang.NullPointerException, mergedContextConfiguration = [WebMergedContextConfiguration@17216605 testClass = PersonCarDaoImplTest, locations = '{}', classes = '{class config.JpaConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@10a907ec key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@79e2c065, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7e07db1f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@c65a5ef, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@cf6885ac, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@d6a24e20, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@18078bef], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.support.AnnotationConfigContextLoader', parent = [null]], attributes = map[[empty]]]
-]]></system-out>
-  </testcase>
-  <testcase name="showPersonsCars on showPersonsCars(dao.PersonCarDaoImplTest)" classname="dao.PersonCarDaoImplTest" time="0.031"/>
+  <testcase name="getSession on getSession(dao.PersonCarDaoImplTest)" classname="dao.PersonCarDaoImplTest" time="0.078"/>
+  <testcase name="getStatistics on getStatistics(dao.PersonCarDaoImplTest)" classname="dao.PersonCarDaoImplTest" time="0.079"/>
+  <testcase name="clear on clear(dao.PersonCarDaoImplTest)" classname="dao.PersonCarDaoImplTest" time="0.052"/>
+  <testcase name="testSavePerson on testSavePerson(dao.PersonCarDaoImplTest)" classname="dao.PersonCarDaoImplTest" time="0.062"/>
+  <testcase name="testSaveCar on testSaveCar(dao.PersonCarDaoImplTest)" classname="dao.PersonCarDaoImplTest" time="0.062"/>
+  <testcase name="showPersonsCars on showPersonsCars(dao.PersonCarDaoImplTest)" classname="dao.PersonCarDaoImplTest" time="0.063"/>
   <testcase name="setPersonByPersonId on setPersonByPersonId(entities.CarTest)" classname="entities.CarTest" time="0"/>
   <testcase name="getPersonByPersonId on getPersonByPersonId(entities.CarTest)" classname="entities.CarTest" time="0"/>
   <testcase name="getId on getId(entities.CarTest)" classname="entities.CarTest" time="0"/>
