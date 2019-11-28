@@ -1,6 +1,5 @@
 dao\PersonCarDaoImpl.class
 config\WebConfig.class
-controller\Person.class
 dao\PersonCarDao.class
 entities\Statistics.class
 config\WebAppInitializer.class
