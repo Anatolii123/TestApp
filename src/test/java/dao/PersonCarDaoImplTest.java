@@ -12,10 +12,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
 import org.springframework.transaction.annotation.Transactional;
-
 import javax.annotation.Resource;
 import java.sql.Date;
-
 import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -44,8 +42,8 @@ public class PersonCarDaoImplTest {
         person.setName("Name");
         person.setBirthDate(Date.valueOf("2000-05-25"));
         personRepository.save(person);
-
         Person person2 = personRepository.findOne(1L);
+
         assertEquals("Name", person2.getName());
     }
 
@@ -57,8 +55,8 @@ public class PersonCarDaoImplTest {
         car.setHorsepower(381);
         car.setOwnerId(1);
         carRepository.save(car);
-
         Car car2 = carRepository.findOne(1L);
+
         assertEquals("BMW", car2.getVendorModel());
     }
 
