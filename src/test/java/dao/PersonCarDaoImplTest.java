@@ -50,7 +50,7 @@ public class PersonCarDaoImplTest {
     }
 
     @Test
-    public void saveCar() {
+    public void testSaveCar() {
         Car car = new Car();
         car.setId(1);
         car.setModel("BMW-X5");
